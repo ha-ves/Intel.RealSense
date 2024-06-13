@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="..\..\librealsense\wrappers\csharp\Intel.RealSense\**\*.cs" />
+		<Content Include="..\..\librealsense\wrappers\csharp\Intel.RealSense\**\*" Exclude="..\..\librealsense\wrappers\csharp\Intel.RealSense\**\*.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="..\..\..\..\OneDrive - 東京都公立大学法人\===RESEARCH\l515_stereo_config.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+
+</Project>
